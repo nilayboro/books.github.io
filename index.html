@@ -5,82 +5,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Best Online e-books | github.com.io/....</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <title>Nilay Fitness</title>
 </head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 96px;
+        filter: invert(100%);
+        margin-left: 36px;
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 60%;
+        margin: 29px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 150px 290px;
+        padding: 75px;
+        width: 43%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+</style>
 
 <body>
-    <nav id="navbar">
-        
-        <ul>
-            <li class="item"><a href="#home">Home</a></li>
-            <li class="item"><a href="aboutus.html">About Us</a></li>
-            <li class="item"><a href="#cofounder-section">Books Gallery</a></li>
-            <li class="item"><a href="#contact">Contact Us</a></li>
-        </ul>
-    </nav>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/gym.png" alt="">
+            <div>Nilay Fitness</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
 
-    <section id="home">
-        
-        <h1 class="h-primary">Pocket Book</h1>
-        <p>"A Room without books is like a body witout a soul"</p>  </b> </b>
-        <p>Books are packed with knowledge insights inot a happy life, life lessons, fear, prayer and helpful advice.Books play a significant role in our life. They say that, "When you open a book, you open a new World".We beleive that everyone would agree with that everyone would agree with this statement as books have inevitable to mandkind.</p>
-        <button class="btn">Join Now</button>
-    </section>
-
-    
-    <section id="cofounder-section">
-        <h1 class="h-primary center">Co-Founders </h1>
-        <div id="cofounder">
-            <div class="cofounder-item">
-                <h1>Rishav Raj Chetia </h1>
-                <img src="logo1.png" alt="Our Cofounder">
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
             </div>
-            <div class="cofounder-item">
-                <h1>   Nilay Boro</h1>
-                <img src="logo2.png" alt="Our Cofounder">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
             </div>
-          
-            
-        </div>
-
-
-    <section id="contact">
-        <h1 class="h-primary center">Contact Us</h1>
-        <div id="contact-box">
-            <form action="">
-                <div class="form-group">
-                    <label for="name">Name: </label>
-                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email: </label>
-                    <input type="email" name="name" id="email" placeholder="Enter Your email">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number: </label>
-                    <input type="phone" name="name" id="phone" placeholder="Enter Your Phone No">
-                </div>
-                <div class="form-group">
-                    <label for="city">Cityr: </label>
-                    <input type="text" name="name" id="city" placeholder="Enter Your City">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message: </label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                </div>
-                <button class="btns">Submit</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="center">
-            Copyright &copy; 2020 github.com.io/... All rights reserved!
-        </div>
-    </footer>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
 </body>
 
 </html>
