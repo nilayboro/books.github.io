@@ -68,13 +68,15 @@ html{
     height: 550px;
     justify-content: center;
     align-items: center;
+    
 }
 
 #home::before{ 
     content: "";
     position: absolute;
+    background-image: url('../bg1.jpg')no-repeat center center/cover;
     /* background: url('../bg1.jpg') no-repeat center center/cover; */
-    background: url('../bg1.jpg') repeat;
+    /* background: url('../bg1.jpg') repeat; */
     height: 642px;
     top:0px;
     left:0px;
