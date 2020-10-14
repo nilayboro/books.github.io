@@ -215,6 +215,17 @@ footer{
     cursor:pointer;
 }
 
+.btns{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: #403737;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
 .center{
     text-align: center;
     margin-top: 48px;
