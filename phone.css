@@ -24,12 +24,12 @@
 
 
 
-/* Cofounder section */
-#cofounder{
+/* Books section */
+#books{
     flex-wrap: wrap;
 }
 
-#cofounder img{
+#books img{
     width: 66px;
     padding: 6px;
     height: auto;
