@@ -20,6 +20,7 @@ html{
     position: sticky;
     top: 0px;
     background-color: #b76969;
+    
 }
 
 #navbar::before{
@@ -74,9 +75,17 @@ html{
 #home::before{ 
     content: "";
     position: absolute;
-    background-color: #4e3e3e;
+    /* background-color: #4e3e3e; */
     /* background: url('../bg1.jpg') no-repeat center center/cover; */
     /* background: url('../bg1.jpg') repeat; */
+
+    background-color: var(--clr-dark);
+    /* background-image: url(../img/fabian-grohs-oZ61KFUQsus-unsplash.jpg); */
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: var(--clr-light);
+    text-align: center;
     height: 642px;
     top:0px;
     left:0px;
